@@ -1,5 +1,7 @@
 # dotnet-microservice
 
+![CI](https://github.com/Shaisolaris/dotnet-microservice/actions/workflows/ci.yml/badge.svg)
+
 ASP.NET Core 8 microservice template with Docker containerization, RabbitMQ event publishing, structured health checks (liveness/readiness), EF Core with seed data, and Swagger documentation. Includes a complete Product CRUD API with stock management and event-driven notifications.
 
 ## Stack
