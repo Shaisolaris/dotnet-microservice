@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using ProductService.HealthChecks;
 using ProductService.Messaging;
 using ProductService.Services;
-using ProductService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

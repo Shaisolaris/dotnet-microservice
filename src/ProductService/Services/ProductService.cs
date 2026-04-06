@@ -29,9 +29,9 @@ public class ProductDbContext : DbContext
 public class ProductCatalogService
 {
     private readonly ProductDbContext _db;
-    private readonly ILogger<ProductService> _logger;
+    private readonly ILogger<ProductCatalogService> _logger;
 
-    public ProductCatalogService(ProductDbContext db, ILogger<ProductService> logger)
+    public ProductCatalogService(ProductDbContext db, ILogger<ProductCatalogService> logger)
     {
         _db = db;
         _logger = logger;
