@@ -1,6 +1,7 @@
 namespace ProductService;
 
 using ProductService.Models;
+using ProductService.Services;
 
 public static class SeedData
 {
