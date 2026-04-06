@@ -2,6 +2,17 @@
 
 ![CI](https://github.com/Shaisolaris/dotnet-microservice/actions/workflows/ci.yml/badge.svg)
 
+
+## Quick Start
+
+```bash
+git clone https://github.com/Shaisolaris/dotnet-microservice.git
+cd dotnet-microservice
+dotnet restore
+dotnet run --project ./src/ProductService
+# Open http://localhost:5000/swagger
+```
+
 ASP.NET Core 8 microservice template with Docker containerization, RabbitMQ event publishing, structured health checks (liveness/readiness), EF Core with seed data, and Swagger documentation. Includes a complete Product CRUD API with stock management and event-driven notifications.
 
 ## Stack
