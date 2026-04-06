@@ -104,4 +104,5 @@ app.MapControllers();
 // Mark as ready
 startupCheck.IsReady = true;
 
+using (var scope = app.Services.CreateScope()) { var db = scope.ServiceProvider.GetRequiredService<ProductService.Services.ProductDbContext>(); ProductService.SeedData.Initialize(db); }
 app.Run();
