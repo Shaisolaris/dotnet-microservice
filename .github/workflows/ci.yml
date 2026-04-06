@@ -13,4 +13,4 @@ jobs:
         with:
           dotnet-version: 8.0.x
       - run: dotnet restore src/ProductService/ProductService.csproj
-      - run: dotnet build src/ProductService/ProductService.csproj --no-restore --warnaserror-
+      - run: dotnet build src/ProductService/ProductService.csproj --no-restore
