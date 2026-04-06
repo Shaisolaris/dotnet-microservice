@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using ProductService.HealthChecks;
 using ProductService.Messaging;
 using ProductService.Services;
-using Svc = ProductService.Services.ProductService;
+using ProductService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +17,7 @@ builder.Services.AddDbContext<ProductDbContext>(options =>
     options.UseInMemoryDatabase("ProductDb"));
 
 // Application services
-builder.Services.AddScoped<Svc>();
+builder.Services.AddScoped<ProductCatalogService>();
 
 // Messaging (use InMemory fallback if RabbitMQ unavailable)
 var rabbitHost = builder.Configuration["RabbitMQ:Host"];

@@ -26,12 +26,12 @@ public class ProductDbContext : DbContext
     }
 }
 
-public class ProductService
+public class ProductCatalogService
 {
     private readonly ProductDbContext _db;
     private readonly ILogger<ProductService> _logger;
 
-    public ProductService(ProductDbContext db, ILogger<ProductService> logger)
+    public ProductCatalogService(ProductDbContext db, ILogger<ProductService> logger)
     {
         _db = db;
         _logger = logger;

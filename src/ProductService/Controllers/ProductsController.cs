@@ -3,16 +3,16 @@ namespace ProductService.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using ProductService.Models;
 using ProductService.Messaging;
-using Svc = ProductService.Services.ProductService;
+using ProductService.Services;
 
 [ApiController]
 [Route("api/[controller]")]
 public class ProductsController : ControllerBase
 {
-    private readonly Svc _service;
+    private readonly ProductCatalogService _service;
     private readonly IMessageBus _bus;
 
-    public ProductsController(Svc service, IMessageBus bus)
+    public ProductsController(ProductCatalogService service, IMessageBus bus)
     {
         _service = service;
         _bus = bus;
