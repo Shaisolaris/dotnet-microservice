@@ -3,6 +3,9 @@
 ![CI](https://github.com/Shaisolaris/dotnet-microservice/actions/workflows/ci.yml/badge.svg)
 
 
+
+.NET 8 microservice with RabbitMQ messaging, health checks, Entity Framework Core InMemory database, and Swagger API docs.
+
 ## Quick Start
 
 ```bash
